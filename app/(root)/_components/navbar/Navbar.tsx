@@ -13,7 +13,7 @@ const Navbar = () => {
       <Link href={'/'}>      
         <div className='relative rounded-full overflow-hidden w-10 h-10 ring-2 ring-offset-1 ring-primary hover:opacity-80'>
           <Image
-            src={'/avatar.png'}
+            src={'/avatar.jpeg'}
             alt='Logo'
             fill
             className='object-cover '

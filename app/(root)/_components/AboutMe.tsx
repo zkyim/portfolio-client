@@ -40,7 +40,7 @@ const AboutMe = ({
     <article className='relative mx-auto p-6 md:grid md:grid-cols-9 gap-4 min-h-[300px] parent-observe'>
       <div className='col-span-3 mb-5 md:mb-0 relative show-observe'>
         <div className='w-fit h-fit m-auto cover-image relative shadow-xl shadow-primary/10'>
-          <Image src={"/avatar.png"} alt='image' width={250} height={300} className='z-[2]'/>
+          <Image src={"/avatar.jpeg"} alt='image' width={250} height={300} className='z-[2]'/>
         </div>
       </div>
       <div className='col-span-6 ml-3 md:flex md:justify-between md:flex-col show-observe'>

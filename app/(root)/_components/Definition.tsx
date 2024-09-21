@@ -37,7 +37,7 @@ const Definition = () => {
 
         <div className="md:col-span-4 grid place-content-center show-observe">
           <div className="relative flex items-center justify-center size-80 md:size-96 rotate-ring">
-            <Image width={300} height={300} alt="prfile" src={"/avatar.png"}  
+            <Image width={300} height={300} alt="prfile" src={"/avatar.jpeg"}  
               className="object-cover size-[80%] border-2 rounded-full ring-4 ring-primary ring-offset-4 ring-offset-background shadow-xl shadow-primary/10"
             />
           </div>
