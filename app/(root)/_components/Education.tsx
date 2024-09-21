@@ -44,7 +44,7 @@ const Education = ({
               return (
                 <li className="relative w-1 py-2" key={index}>
                   <span className="the-line"></span>
-                  <div className="relative w-[320px] md:w-[400px] bg-muted border border-muted-foreground/10 top-0 shadow-xl shadow-primary/10 rounded-md py-3 pt-4 px-6 mt-2 show-observe">
+                  <div className="relative w-[300px] md:w-[400px] bg-muted border border-muted-foreground/10 top-0 shadow-xl shadow-primary/10 rounded-md py-3 pt-4 px-6 mt-2 show-observe">
                       <span className="date absolute top-0 -translate-y-[50%] py-1 px-3 bg-green-400 rounded-md text-white text-sm shadow-lg shadow-green-400/15">{format(education.year, "yyyy")}</span>
                       <h3 className="text-foreground text-xl"> {education?.title} </h3>
                       <p className="text-[15px] mt-1">

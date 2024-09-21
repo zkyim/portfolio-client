@@ -40,7 +40,7 @@ const Skills = ({
   return (
     <section className="relative parent-observe">
       <TitleElement
-        title='Education'
+        title='Skills'
       />
       <Tabs defaultValue={tabItem[0].title}>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-8">

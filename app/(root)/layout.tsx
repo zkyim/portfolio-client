@@ -41,7 +41,7 @@ const LayoutRoot = ({
                 </div>
                 <div className={cn("min-h-[calc(100vh - 70px)]", isDirectionLtr ? "lg:pl-[260px]" : "lg:pr-[260px]")}>
                     <Navbar />
-                    <div className="p-8 h-full">
+                    <div className="px-4 md:px-8 py-10 h-full">
                         {children}
                     </div>
                 </div>
