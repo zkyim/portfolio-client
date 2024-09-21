@@ -25,7 +25,7 @@ const CarouselPage = ({
 
     useEffect(() => {
         setSelectedImage(mainImage[0].source);
-    }, [mainImage])
+    }, [])
 
     const handleSelectedImage = (source: string) => {
         setSelectedImage(source)
