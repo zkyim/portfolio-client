@@ -15,7 +15,7 @@ const Education = ({
 }: EducationProps) => {
     const ulRef = useRef<any>(null);
     const [progress, setProgress] = useState<number | string>(100);
-    const startSection = 400;
+    const startSection = 370;
     window.onscroll = () => {
       console.log(scrollY);
       if (window.scrollY >= (ulRef.current?.offsetTop - startSection) ) {
@@ -33,7 +33,7 @@ const Education = ({
       return () => (window.onscroll = null);
     };
   return (
-    <section>
+    <section id="education">
       <TitleElement 
         title='Education'
       />
@@ -57,7 +57,7 @@ const Education = ({
               </li>
               );
             })}
-            <a className="last-circle flex items-center justify-center text-black dark:text-white border-2 border-border dark:border-background" href="#education">
+            <a className="last-circle flex items-center justify-center text-black dark:text-white border-2 border-[#cde5f8] dark:border-background" href="#education">
                 <ChevronsUp className=""/>
             </a>
         </ul>

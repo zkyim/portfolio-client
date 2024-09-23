@@ -134,7 +134,7 @@ html, body, :root {
   @apply shadow-md shadow-primary/15;
 }
 .time-line li.active .circle-eduction {
-  border-color: hsl(var(--primary));
+  border-color: hsl(var(--primary)) !important;
   transition: 0.3s;
 }
 .circle-eduction::after {
@@ -188,7 +188,6 @@ html, body, :root {
   width: 30px;
   background-color: hsl(var(--muted));
   border-radius: 50%;
-  border: 2px solid hsl(var(--border));
   transform: translateX(-50%);
   z-index: 3;
   transition: 0.5;

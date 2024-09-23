@@ -11,12 +11,12 @@ const Navbar = () => {
         <MobileSidebar />
       </div>  
       <Link href={'/'}>      
-        <div className='relative rounded-full overflow-hidden w-10 h-10 ring-2 ring-offset-1 ring-primary hover:opacity-80'>
+        <div className='relative rounded-full overflow-hidden w-11 h-11 ring-2 ring-offset-1 ring-primary hover:opacity-80'>
           <Image
-            src={'/avatar.jpeg'}
+            src={'/logo.png'}
             alt='Logo'
             fill
-            className='object-cover '
+            className='object-cover scale-125'
           />
         </div>
       </Link>
