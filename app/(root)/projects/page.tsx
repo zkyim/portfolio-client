@@ -3,7 +3,7 @@ import React from 'react'
 import Search from './_components/Search';
 import Link from 'next/link';
 import Image from 'next/image';
-import { CalendarClock, CalendarIcon, Github, Paperclip } from 'lucide-react';
+import { CalendarIcon, Github, Paperclip } from 'lucide-react';
 import TitleElement from '../_components/TitleElement';
 
 
@@ -39,7 +39,7 @@ const page = async ({searchParams} : {searchParams: {title: string; description:
                 <div className='mt-2'>
                   <h3 className='text-muted-foreground text-md font-medium truncate px-2'>{project.title}</h3>
                   <div className='px-3 text-sm mt-1 space-x-1'>
-                    <span>{project.tools.split(",").length}</span>
+                    <span>{project.tools.split(",").length-1}</span>
                     <span className='text-muted-foreground'>Tools</span>
                   </div>
                   <div className='flex items-center gap-1 px-1.5 mt-1'>
