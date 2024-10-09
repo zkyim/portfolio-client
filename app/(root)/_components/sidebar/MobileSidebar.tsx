@@ -20,9 +20,9 @@ const MobileSidebar = () => {
       </SheetTrigger>
       <SheetContent className='p-0' side={isDirectionLtr ? 'left' : 'right'}>
         <RoutesSidebarCont>
-          {/* <SheetClose> */}
+          <SheetClose>
             <Routes />
-          {/* </SheetClose> */}
+          </SheetClose>
         </RoutesSidebarCont>
       </SheetContent>
     </Sheet>
