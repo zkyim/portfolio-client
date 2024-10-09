@@ -1,7 +1,7 @@
 "use client"
 import { cn } from '@/lib/utils';
 import { LucideIcon } from 'lucide-react';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -15,9 +15,13 @@ interface RouteProps {
 
 const Route = ({ label, href, icon: Icon, isActive, className }: RouteProps) => {
   const { t, i18n } = useTranslation();
+  const router = useRouter();
+  const onClick = () => {
+    router.push(href);
+  }
   return (
     <>
-      <Link href={href}>
+      <div onClick={onClick}>
         <div 
           className={cn('relative group w-full flex items-center py-3 px-2 cursor-pointer text-muted-foreground transition-all',
             className,
@@ -30,7 +34,7 @@ const Route = ({ label, href, icon: Icon, isActive, className }: RouteProps) => 
           <div className={cn("absolute inset-0 w-1 bg-muted-foreground/25 h-full", isActive && "bg-primary/95 group-hover:bg-primary")}/>
           <div className={cn("absolute inset-0 w-1 h-0 group-hover:bg-muted-foreground/60 group-hover:h-full transition-all", isActive && "bg-primary/95 group-hover:bg-primary")}/>
         </div>
-      </Link>
+      </div>
     </>
   )
 }
