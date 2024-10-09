@@ -5,8 +5,9 @@ import React, { useEffect, useState } from 'react'
 import Cookies from "js-cookie"
 import { useDirection } from '@/stroe/use-dirction';
 import Navbar from './_components/navbar/Navbar';
-import { Sidebar } from './_components/sidebar/Sidebar';
 import ScrollToTop from './_components/ScrollToTop';
+import RoutesSidebarCont from './_components/sidebar/RoutesSidebarCont';
+import { Routes } from './_components/sidebar/Routes';
 
 const LayoutRoot = ({
     children,
@@ -37,7 +38,9 @@ const LayoutRoot = ({
         <div className="w-full h-full">
             <div className="w-full h-full">
                 <div className={cn("hidden lg:block border-muted-foreground/20 border-r w-[260px] fixed top-0 h-full", isDirectionLtr ? "left-0" : "right-0")}>
-                    <Sidebar />
+                    <RoutesSidebarCont>
+                        <Routes />
+                    </RoutesSidebarCont>
                 </div>
                 <div className={cn("min-h-[calc(100vh - 70px)]", isDirectionLtr ? "lg:pl-[260px]" : "lg:pr-[260px]")}>
                     <Navbar />

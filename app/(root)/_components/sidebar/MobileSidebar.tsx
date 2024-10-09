@@ -7,8 +7,9 @@ import {
     SheetClose,
   } from "@/components/ui/sheet"
 import { Menu } from 'lucide-react'
-import { Sidebar } from './Sidebar'
 import { useDirection } from '@/stroe/use-dirction';
+import RoutesSidebarCont from './RoutesSidebarCont';
+import { Routes } from './Routes';
   
 const MobileSidebar = () => {
   const { isDirectionLtr } = useDirection();
@@ -18,7 +19,11 @@ const MobileSidebar = () => {
         <Menu className='h-5 w-5'/>
       </SheetTrigger>
       <SheetContent className='p-0' side={isDirectionLtr ? 'left' : 'right'}>
-        <Sidebar />
+        <RoutesSidebarCont>
+          {/* <SheetClose> */}
+            <Routes />
+          {/* </SheetClose> */}
+        </RoutesSidebarCont>
       </SheetContent>
     </Sheet>
   )

@@ -17,7 +17,6 @@ const Education = ({
     const [progress, setProgress] = useState<number | string>(100);
     const startSection = 370;
     window.onscroll = () => {
-      console.log(scrollY);
       if (window.scrollY >= (ulRef.current?.offsetTop - startSection) ) {
         ulRef.current?.children[0]
         let heightValue: number | string = 100 - Number(((window.scrollY - (ulRef.current?.offsetTop - startSection)) / ulRef.current?.scrollHeight * 100).toFixed(1));
